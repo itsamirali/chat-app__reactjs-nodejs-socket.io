@@ -26,16 +26,18 @@ const App = () => {
           <input
             type="text"
             placeholder="نام ..."
-            onChange={(event) => {
-              setUsername(event.target.value);
+            onChange={(e) => {
+              setUsername(e.target.value);
             }}
+            value={username}
           />
           <input
             type="text"
             placeholder="آیدی گفتگو ..."
-            onChange={(event) => {
-              setRoom(event.target.value);
+            onChange={(e) => {
+              setRoom(e.target.value);
             }}
+            value={room}
           />
           <button onClick={joinRoom}>شروع</button>
         </div>
